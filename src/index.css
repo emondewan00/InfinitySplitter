@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.row > .divider {
+  cursor: e-resize;
+}
+.column > .divider {
+  cursor: n-resize;
+}

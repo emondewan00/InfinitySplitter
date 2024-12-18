@@ -1,10 +1,12 @@
-export type PanelType = "panel" | "row" | "column";
+export type PanelType = "panel" | "row" | "column" | "divider";
 
 export interface Panel {
     id: string;
     type: PanelType;
     children: string[];
     randomColor: string;
+    height?: string;
+    width?: string;
 }
 
 export type PanelsMap = Record<string, Panel>;
